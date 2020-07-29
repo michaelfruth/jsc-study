@@ -1,0 +1,17 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+chardet = "*"
+jsonschema = "*"
+pandas = "*"
+gitpython = "*"
+jsonsubschema = {editable = true, path = "./tools/jsonsubschema"}
+plotly = "*"
+
+[requires]
+python_version = "3.7"
