@@ -1,0 +1,27 @@
+python subschemas_output_common_symbols.py -f data/subschemas_python-jsonsubschema.pick -f2 data/subschemas_npm-is-json-schema-subset.pick -c schemastore_history/commits -filter-file data/filter_draft4.pick
+Total: 796
+++++++++++ Summary ++++++++++
+Equal Symbols:
+≡: 76 (9.5%)
+⊂: 23 (2.9%)
+⊃: 8 (1.0%)
+⟂: 157 (19.7%)
+∥: 21 (2.6%)
+Differently Symbols:
+≡ - ⊂: 2 (0.3%)
+≡ - ⊃: 2 (0.3%)
+≡ - ∥: 3 (0.4%)
+⊂ - ≡: 24 (3.0%)
+⊂ - ⊃: 2 (0.3%)
+⊂ - ∥: 13 (1.6%)
+⊃ - ≡: 45 (5.7%)
+⊃ - ∥: 9 (1.1%)
+⟂ - ≡: 206 (25.9%)
+⟂ - ⊂: 26 (3.3%)
+⟂ - ⊃: 4 (0.5%)
+⟂ - ∥: 136 (17.1%)
+∥ - ≡: 27 (3.4%)
+∥ - ⊂: 5 (0.6%)
+∥ - ⊃: 4 (0.5%)
+∥ - ⟂: 3 (0.4%)
+++++++++++ End Summary ++++++++++

@@ -1,0 +1,366 @@
+python draft4_new_keywords_finder.py -f data-06-19-2020.pick -p src/schemas/json/ -c schemastore_history/commits
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/813#c955a581c324ad69b00513429cb5721fae0d12ff/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/818#6b1aa1fdd992bb249e0c812bbd8ae594daa7568d/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/826#0f14156895e0e456381c626ff17bfeac008a5914/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/834#7714839936c11cbb7156abb5e285400921857232/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/837#cba8ce2c962d87df7916af4700d153d861ad549a/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/843#8991d77dd7616265b2303fe704f0a6695ebe42a7/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/867#50fbd4ab20fafc9a23d7692796730f24bd592305/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/869#bcfe6050afe8d2e0b4151a82e5a8701a097749ad/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/882#b45cfc6c7eb7dc5a44e7e0fc443991b301551ff4/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/942#93953b1eeaf681a79d74a3556726fd02ba3f037c/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/954#ea700feb53e11f94f8e774dde1b3fc14750ed6f1/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/957#edebbe66bd2d5d288eb2a63aab952d544fcdc277/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/966#df66ca909b519759e8701e5cea30ee9b369b2a08/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/968#d903ee441606377ebe46dc498eabdacc424d5975/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/983#201711cbb2da13026cbe3268d341918cf5ccc6df/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/1005#0a36a6e79e1d0d9d54eef1a55dcbc75a27078ad2/src/schemas/json/github-workflow.json
+http://json-schema.org/draft-07/schema
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+ADDED const items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/747#dcdd68868c8f8a83e694901008366dcfdd89b05b/src/schemas/json/drone.json
+http://json-schema.org/draft-07/schema#
+ADDED const kind
+ADDED const disable
+ADDED const pull
+ADDED const pull
+ADDED const kind
+ADDED const kind
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/761#ca12aeb77254adfb9638909db18da5150121489b/src/schemas/json/drone.json
+http://json-schema.org/draft-07/schema#
+ADDED const kind
+ADDED const disable
+ADDED const pull
+ADDED const pull
+ADDED const kind
+ADDED const kind
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/786#af92489871a7f03a971e8f6049ad2680cacd8a22/src/schemas/json/drone.json
+http://json-schema.org/draft-07/schema#
+ADDED const kind
+ADDED const disable
+ADDED const type
+ADDED const pull
+ADDED const type
+ADDED const type
+ADDED const type
+ADDED const kind
+ADDED const kind
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/923#03a73ca4ef45f1cc478fa882ef3a7b626bd4861b/src/schemas/json/drone.json
+http://json-schema.org/draft-07/schema#
+ADDED const kind
+ADDED const disable
+ADDED const type
+ADDED const pull
+ADDED const type
+ADDED const type
+ADDED const type
+ADDED const kind
+ADDED const kind
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/933#d875fb458711af7fe0a63b18b471e52040480306/src/schemas/json/drone.json
+http://json-schema.org/draft-07/schema#
+ADDED const kind
+ADDED const disable
+ADDED const type
+ADDED const pull
+ADDED const type
+ADDED const type
+ADDED const type
+ADDED const kind
+ADDED const kind
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/935#deba0f501a15967939f5e514844ae038c75c81c9/src/schemas/json/drone.json
+http://json-schema.org/draft-07/schema#
+ADDED const kind
+ADDED const disable
+ADDED const type
+ADDED const pull
+ADDED const type
+ADDED const type
+ADDED const type
+ADDED const kind
+ADDED const kind
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/1012#1c1138a00172d1711d9798408f34f536809497b0/src/schemas/json/drone.json
+http://json-schema.org/draft-07/schema#
+ADDED const pull
+ADDED const kind
+ADDED const kind
+ADDED const kind
+ADDED const disable
+ADDED const type
+ADDED const type
+ADDED const type
+ADDED const type
+ADDED const type
+ADDED const type
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/870#a440decfdeb539cb68f155ab5dd621f50e439408/src/schemas/json/codecov.json
+http://json-schema.org/draft-07/schema#
+ADDED const oneOf
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/812#94bae8002941bd166b9565d205c8b191577496ba/src/schemas/json/github-action.json
+http://json-schema.org/draft-07/schema
+ADDED const using
+ADDED const using
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/837#cba8ce2c962d87df7916af4700d153d861ad549a/src/schemas/json/github-action.json
+http://json-schema.org/draft-07/schema
+ADDED const using
+ADDED const using
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/573#9980d0e9cc4e6688a15bc8f5a35cbf7cfd6bfaf3/src/schemas/json/datalogic-scan2deploy-android.json
+http://json-schema.org/draft-07/schema#
+ADDED if network
+ADDED then network
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/573#9980d0e9cc4e6688a15bc8f5a35cbf7cfd6bfaf3/src/schemas/json/datalogic-scan2deploy-ce.json
+http://json-schema.org/draft-07/schema#
+ADDED if network
+ADDED then network
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/598#97584c087d8c25f5fcbfc55d47212bbd6076623c/src/schemas/json/pyrseas-0.8.json
+http://json-schema.org/draft-07/schema#
+ADDED const oneOf
+ADDED const oneOf
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/609#80b7826df378a1a6db7af5fadc192e14089ad936/src/schemas/json/nodemon.json
+http://json-schema.org/draft-07/schema
+ADDED const exec
+ADDED const anyOf
+ADDED const anyOf
+ADDED const anyOf
+ADDED const anyOf
+ADDED const anyOf
+ADDED const anyOf
+ADDED const anyOf
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/712#2f40e0d10c31f660713590c30f7bf14345bb236f/src/schemas/json/lintstagedrc.schema.json
+http://json-schema.org/draft-07/schema
+ADDED propertyNames basicConfig
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/729#55f714e2d507755750d808c324da23883e910f9f/src/schemas/json/opspec-io-0.1.7.json
+http://json-schema.org/draft-07/schema#
+ADDED writeOnly properties
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/763#c6f7a21ec3bb8941be8522089b502d64caae70e8/src/schemas/json/fabric.mod.json
+http://json-schema.org/draft-07/schema
+ADDED const schemaVersion
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/785#f7432272a99f4031d670e65ecf14afab115c3b5f/src/schemas/json/prometheus.json
+http://json-schema.org/draft-07/schema#
+ADDED const basic_auth
+ADDED const bearer_token
+ADDED const bearer_token_file
+ADDED const bearer_token
+ADDED const basic_auth
+ADDED const bearer_token_file
+ADDED const bearer_token_file
+ADDED const basic_auth
+ADDED const bearer_token
+ADDED const action
+ADDED if allOf
+ADDED if allOf
+ADDED if allOf
+ADDED if items
+ADDED then allOf
+ADDED then allOf
+ADDED then allOf
+ADDED then items
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/846#9b2741719ba9355dbd3f43c4cf73eab76e5093b1/src/schemas/json/neoload.json
+http://json-schema.org/draft-07/schema#
+ADDED if actions
+ADDED then properties
+ADDED else properties
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/949#173a879a021f7f70827a4ae793818749880af95e/src/schemas/json/hadolint.json
+http://json-schema.org/draft-07/schema#
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+ADDED const oneOf
+
+/Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/1009#59ea7b514da9a37ee480370d5c4db9c83e47ac61/src/schemas/json/commitlintrc.json
+http://json-schema.org/draft-07/schema
+ADDED propertyNames rules
+
+ADDED TOTAL: 37
+INCOMPATIBLE TOTAL: 0

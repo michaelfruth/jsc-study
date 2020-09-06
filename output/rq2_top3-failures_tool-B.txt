@@ -1,0 +1,13 @@
+python subschemas_plot_exception_types.py -f data/subschemas_self_npm-is-json-schema-subset.pick -c schemastore_history/commits -filter-file data/filter_draft4.pick
+         Exception_Type  Counts  Percentage
+0           RangeError:     118   77.124183
+1        ResolverError:      25   16.339869
+2  MissingPointerError:       8    5.228758
+3                Error:       2    1.307190
+         Exception_Type  Counts  Percentage
+0           RangeError:     118        77.1
+1        ResolverError:      25        16.3
+2  MissingPointerError:       8         5.2
+3                Error:       2         1.3
+Total pairs: 1028
+Total errors: 153

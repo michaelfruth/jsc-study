@@ -1,0 +1,9 @@
+python filter_output_categories.py -f data/filter_draft4_no-not.pick -c schemastore_history/commits
+
+Total files: 281
+Unique files: 281
+Filtered categories:
+meta: 42
+conf: 165
+app: 8
+data: 12

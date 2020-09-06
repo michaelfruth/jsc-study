@@ -1,0 +1,648 @@
+python git_file_changes_output.py -f data-06-19-2020.pick -c schemastore_history/commits -p src/schemas/json/ -filter-file data/filter_draft4.pick
+
+################################################## UNFILTERED ##################################################
+Total files: 248
+Total deleted files: 22
+Total file versions: 1069
+Total deleted versions: 63
+Total successive versions: 821
+Total successive deleted versions: 41
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Unique commit count (number of total (current + deleted) repositories affected by 'paths':): 869
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Occurrences:
+History: 67 (1 schema(s))
+History: 66 (1 schema(s))
+History: 55 (1 schema(s))
+History: 32 (2 schema(s))
+History: 30 (3 schema(s))
+History: 29 (1 schema(s))
+History: 16 (1 schema(s))
+History: 15 (2 schema(s))
+History: 14 (1 schema(s))
+History: 12 (1 schema(s))
+History: 11 (3 schema(s))
+History: 10 (3 schema(s))
+History: 9 (1 schema(s))
+History: 8 (5 schema(s))
+History: 7 (6 schema(s))
+History: 6 (12 schema(s))
+History: 5 (13 schema(s))
+History: 4 (18 schema(s))
+History: 3 (24 schema(s))
+History: 2 (42 schema(s))
+History: 1 (107 schema(s))
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Available History:
+src/schemas/json/tsconfig.json: 67 version(s) | Min-Count: 46 Max-Count: 964
+src/schemas/json/tslint.json: 66 version(s) | Min-Count: 2 Max-Count: 998
+src/schemas/json/travis.json: 55 version(s) | Min-Count: 409 Max-Count: 1002
+src/schemas/json/sarif.json: 32 version(s) | Min-Count: 111 Max-Count: 902
+src/schemas/json/gitlab-ci.json: 32 version(s) | Min-Count: 540 Max-Count: 996
+src/schemas/json/package.json: 30 version(s) | Min-Count: 2 Max-Count: 1000
+src/schemas/json/project.json: 30 version(s) | Min-Count: 2 Max-Count: 214
+src/schemas/json/jsconfig.json: 30 version(s) | Min-Count: 222 Max-Count: 892
+src/schemas/json/eslintrc.json: 29 version(s) | Min-Count: 94 Max-Count: 995
+src/schemas/json/github-workflow.json: 16 version(s) | Min-Count: 813 Max-Count: 1005
+src/schemas/json/composer.json: 15 version(s) | Min-Count: 7 Max-Count: 946
+src/schemas/json/circleciconfig.json: 15 version(s) | Min-Count: 424 Max-Count: 1013
+src/schemas/json/libman.json: 14 version(s) | Min-Count: 299 Max-Count: 467
+src/schemas/json/prettierrc.json: 12 version(s) | Min-Count: 358 Max-Count: 911
+src/schemas/json/host.json: 11 version(s) | Min-Count: 269 Max-Count: 860
+src/schemas/json/appveyor.json: 11 version(s) | Min-Count: 410 Max-Count: 988
+src/schemas/json/cloud-sdk-pipeline-config-schema.json: 11 version(s) | Min-Count: 790 Max-Count: 1003
+src/schemas/json/resume.json: 10 version(s) | Min-Count: 2 Max-Count: 871
+src/schemas/json/web-manifest.json: 10 version(s) | Min-Count: 2 Max-Count: 758
+src/schemas/json/appsettings.json: 10 version(s) | Min-Count: 368 Max-Count: 938
+src/schemas/json/launchsettings.json: 9 version(s) | Min-Count: 24 Max-Count: 472
+src/schemas/json/babelrc.json: 8 version(s) | Min-Count: 111 Max-Count: 734
+src/schemas/json/sarif-1.0.0.json: 8 version(s) | Min-Count: 192 Max-Count: 258
+src/schemas/json/stylelintrc.json: 8 version(s) | Min-Count: 246 Max-Count: 953
+src/schemas/json/template.json: 8 version(s) | Min-Count: 324 Max-Count: 527
+src/schemas/json/appsscript.json: 8 version(s) | Min-Count: 548 Max-Count: 875
+src/schemas/json/chutzpah.json: 7 version(s) | Min-Count: 2 Max-Count: 571
+src/schemas/json/jshintrc.json: 7 version(s) | Min-Count: 2 Max-Count: 637
+src/schemas/json/swagger-2.0.json: 7 version(s) | Min-Count: 2 Max-Count: 483
+src/schemas/json/xunit.runner.schema.json: 7 version(s) | Min-Count: 89 Max-Count: 773
+src/schemas/json/function.json: 7 version(s) | Min-Count: 276 Max-Count: 373
+src/schemas/json/drone.json: 7 version(s) | Min-Count: 747 Max-Count: 1012
+src/schemas/json/bower.json: 6 version(s) | Min-Count: 2 Max-Count: 121
+src/schemas/json/bowerrc.json: 6 version(s) | Min-Count: 2 Max-Count: 160
+src/schemas/json/chrome-manifest.json: 6 version(s) | Min-Count: 2 Max-Count: 684
+src/schemas/json/global.json: 6 version(s) | Min-Count: 2 Max-Count: 776
+src/schemas/json/package.manifest.json: 6 version(s) | Min-Count: 2 Max-Count: 639
+src/schemas/json/bundleconfig.json: 6 version(s) | Min-Count: 208 Max-Count: 279
+src/schemas/json/vs-nesting.json: 6 version(s) | Min-Count: 395 Max-Count: 658
+src/schemas/json/install.json: 6 version(s) | Min-Count: 355 Max-Count: 615
+src/schemas/json/cirrus.json: 6 version(s) | Min-Count: 528 Max-Count: 888
+src/schemas/json/ksp-ckan.json: 6 version(s) | Min-Count: 202 Max-Count: 943
+src/schemas/json/cosmos-config.json: 6 version(s) | Min-Count: 728 Max-Count: 1015
+src/schemas/json/ansible-stable-2.9.json: 6 version(s) | Min-Count: 884 Max-Count: 991
+src/schemas/json/jscsrc.json: 5 version(s) | Min-Count: 2 Max-Count: 146
+src/schemas/json/project-1.0.0-rc2.json: 5 version(s) | Min-Count: 181 Max-Count: 214
+src/schemas/json/webextension.json: 5 version(s) | Min-Count: 349 Max-Count: 476
+src/schemas/json/ansible-stable-2.1.json: 5 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/ansible-stable-2.2.json: 5 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/ansible-stable-2.3.json: 5 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/ansible-stable-2.4.json: 5 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/ansible-stable-2.5.json: 5 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/renovate.json: 5 version(s) | Min-Count: 524 Max-Count: 925
+src/schemas/json/azure-iot-edge-deployment-2.0.json: 5 version(s) | Min-Count: 677 Max-Count: 927
+src/schemas/json/azure-iot-edge-deployment-template-2.0.json: 5 version(s) | Min-Count: 677 Max-Count: 751
+src/schemas/json/mta.json: 5 version(s) | Min-Count: 691 Max-Count: 822
+src/schemas/json/codecov.json: 5 version(s) | Min-Count: 746 Max-Count: 870
+src/schemas/json/jsonld.json: 4 version(s) | Min-Count: 2 Max-Count: 483
+src/schemas/json/nuget-project.json: 4 version(s) | Min-Count: 80 Max-Count: 231
+src/schemas/json/bootstraprc.json: 4 version(s) | Min-Count: 114 Max-Count: 134
+src/schemas/json/typings.json: 4 version(s) | Min-Count: 136 Max-Count: 219
+src/schemas/json/typingsrc.json: 4 version(s) | Min-Count: 139 Max-Count: 250
+src/schemas/json/openfin.json: 4 version(s) | Min-Count: 297 Max-Count: 897
+src/schemas/json/imageoptimizer.json: 4 version(s) | Min-Count: 376 Max-Count: 380
+src/schemas/json/asmdef.json: 4 version(s) | Min-Count: 416 Max-Count: 520
+src/schemas/json/up.json: 4 version(s) | Min-Count: 426 Max-Count: 464
+src/schemas/json/prisma.json: 4 version(s) | Min-Count: 452 Max-Count: 807
+src/schemas/json/lsdlschema.json: 4 version(s) | Min-Count: 465 Max-Count: 930
+src/schemas/json/ansible-stable-2.0.json: 4 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/azure-iot-edge-deployment-1.0.json: 4 version(s) | Min-Count: 642 Max-Count: 669
+src/schemas/json/typedoc.json: 4 version(s) | Min-Count: 682 Max-Count: 885
+src/schemas/json/huskyrc.json: 4 version(s) | Min-Count: 686 Max-Count: 960
+src/schemas/json/kustomization.json: 4 version(s) | Min-Count: 696 Max-Count: 1004
+src/schemas/json/sarif-external-property-file.json: 4 version(s) | Min-Count: 715 Max-Count: 902
+src/schemas/json/jsdoc-1.0.0.json: 4 version(s) | Min-Count: 907 Max-Count: 941
+src/schemas/json/json-patch.json: 3 version(s) | Min-Count: 2 Max-Count: 965
+src/schemas/json/schema-catalog.json: 3 version(s) | Min-Count: 2 Max-Count: 679
+src/schemas/json/contribute.json: 3 version(s) | Min-Count: 7 Max-Count: 955
+src/schemas/json/project-1.0.0-beta4.json: 3 version(s) | Min-Count: 40 Max-Count: 62
+src/schemas/json/project-1.0.0-beta5.json: 3 version(s) | Min-Count: 75 Max-Count: 78
+src/schemas/json/project-1.0.0-beta6.json: 3 version(s) | Min-Count: 75 Max-Count: 78
+src/schemas/json/jsbeautifyrc.json: 3 version(s) | Min-Count: 114 Max-Count: 438
+src/schemas/json/pattern.json: 3 version(s) | Min-Count: 135 Max-Count: 228
+src/schemas/json/sprite.json: 3 version(s) | Min-Count: 198 Max-Count: 245
+src/schemas/json/jdt.json: 3 version(s) | Min-Count: 311 Max-Count: 313
+src/schemas/json/vs-2017.3.host.json: 3 version(s) | Min-Count: 329 Max-Count: 443
+src/schemas/json/dotnetcli.host.json: 3 version(s) | Min-Count: 330 Max-Count: 334
+src/schemas/json/solidaritySchema.json: 3 version(s) | Min-Count: 401 Max-Count: 760
+src/schemas/json/vsext.json: 3 version(s) | Min-Count: 420 Max-Count: 557
+src/schemas/json/sarif-2.0.0.json: 3 version(s) | Min-Count: 532 Max-Count: 568
+src/schemas/json/package.manifest-8.0.0.json: 3 version(s) | Min-Count: 622 Max-Count: 639
+src/schemas/json/azure-iot-edge-deployment-template-1.0.json: 3 version(s) | Min-Count: 650 Max-Count: 655
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.0.json: 3 version(s) | Min-Count: 688 Max-Count: 694
+src/schemas/json/behat.json: 3 version(s) | Min-Count: 709 Max-Count: 887
+src/schemas/json/mtad.json: 3 version(s) | Min-Count: 713 Max-Count: 770
+src/schemas/json/vss-extension.json: 3 version(s) | Min-Count: 773 Max-Count: 977
+src/schemas/json/web-types.json: 3 version(s) | Min-Count: 781 Max-Count: 1010
+src/schemas/json/ninjs-1.1.json: 3 version(s) | Min-Count: 45 Max-Count: 824
+src/schemas/json/httpmockrc.json: 3 version(s) | Min-Count: 844 Max-Count: 937
+src/schemas/json/coffeelint.json: 2 version(s) | Min-Count: 2 Max-Count: 676
+src/schemas/json/config.json: 2 version(s) | Min-Count: 2 Max-Count: 77
+src/schemas/json/resjson.json: 2 version(s) | Min-Count: 2 Max-Count: 293
+src/schemas/json/sourcemap-v3.json: 2 version(s) | Min-Count: 2 Max-Count: 162
+src/schemas/json/webjob-publish-settings.json: 2 version(s) | Min-Count: 2 Max-Count: 30
+src/schemas/json/templatesources.json: 2 version(s) | Min-Count: 70 Max-Count: 71
+src/schemas/json/tsd.json: 2 version(s) | Min-Count: 89 Max-Count: 137
+src/schemas/json/csslintrc.json: 2 version(s) | Min-Count: 93 Max-Count: 94
+src/schemas/json/project-1.0.0-beta8.json: 2 version(s) | Min-Count: 98 Max-Count: 103
+src/schemas/json/haxelib.json: 2 version(s) | Min-Count: 168 Max-Count: 780
+src/schemas/json/vega-lite.json: 2 version(s) | Min-Count: 193 Max-Count: 407
+src/schemas/json/vega.json: 2 version(s) | Min-Count: 193 Max-Count: 406
+src/schemas/json/schema-org-thing.json: 2 version(s) | Min-Count: 243 Max-Count: 256
+src/schemas/json/docfx.json: 2 version(s) | Min-Count: 263 Max-Count: 294
+src/schemas/json/omnisharp.json: 2 version(s) | Min-Count: 277 Max-Count: 1008
+src/schemas/json/proxies.json: 2 version(s) | Min-Count: 321 Max-Count: 365
+src/schemas/json/feed.json: 2 version(s) | Min-Count: 340 Max-Count: 341
+src/schemas/json/vsix-manifestinjection.json: 2 version(s) | Min-Count: 422 Max-Count: 429
+src/schemas/json/cryproj.json: 2 version(s) | Min-Count: 456 Max-Count: 493
+src/schemas/json/vsix-publish.json: 2 version(s) | Min-Count: 483 Max-Count: 580
+src/schemas/json/cryproj.52.schema.json: 2 version(s) | Min-Count: 493 Max-Count: 517
+src/schemas/json/cryproj.53.schema.json: 2 version(s) | Min-Count: 493 Max-Count: 517
+src/schemas/json/cryproj.54.schema.json: 2 version(s) | Min-Count: 493 Max-Count: 517
+src/schemas/json/cryproj.55.schema.json: 2 version(s) | Min-Count: 493 Max-Count: 517
+src/schemas/json/cryproj.dev.schema.json: 2 version(s) | Min-Count: 493 Max-Count: 517
+src/schemas/json/avro-avsc.json: 2 version(s) | Min-Count: 507 Max-Count: 817
+src/schemas/json/npm-link-up.json: 2 version(s) | Min-Count: 510 Max-Count: 541
+src/schemas/json/bozr.json: 2 version(s) | Min-Count: 539 Max-Count: 716
+src/schemas/json/bukkit-plugin.json: 2 version(s) | Min-Count: 561 Max-Count: 831
+src/schemas/json/bungee-plugin.json: 2 version(s) | Min-Count: 561 Max-Count: 900
+src/schemas/json/nswag.json: 2 version(s) | Min-Count: 617 Max-Count: 736
+src/schemas/json/ansible-stable-2.6.json: 2 version(s) | Min-Count: 664 Max-Count: 794
+src/schemas/json/ansible-stable-2.7.json: 2 version(s) | Min-Count: 664 Max-Count: 794
+src/schemas/json/lsdlschema-1.0.json: 2 version(s) | Min-Count: 671 Max-Count: 782
+src/schemas/json/lerna.json: 2 version(s) | Min-Count: 724 Max-Count: 783
+src/schemas/json/hemtt-0.6.2.json: 2 version(s) | Min-Count: 741 Max-Count: 951
+src/schemas/json/dss-2.0.0.json: 2 version(s) | Min-Count: 562 Max-Count: 765
+src/schemas/json/dependabot.json: 2 version(s) | Min-Count: 779 Max-Count: 852
+src/schemas/json/pubspec.json: 2 version(s) | Min-Count: 792 Max-Count: 803
+src/schemas/json/now.json: 2 version(s) | Min-Count: 806 Max-Count: 934
+src/schemas/json/jekyll.json: 2 version(s) | Min-Count: 811 Max-Count: 836
+src/schemas/json/github-action.json: 2 version(s) | Min-Count: 812 Max-Count: 837
+src/schemas/json/component.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/epr-manifest.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-clean-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-copy-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-cssmin-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-jshint-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-watch-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/host-meta.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/schema-draft-v4.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/settings.job.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/webjobs-list.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/debugsettings.json: 1 version(s) | Min-Count: 35 Max-Count: 35
+src/schemas/json/project-1.0.0-beta3.json: 1 version(s) | Min-Count: 40 Max-Count: 40
+src/schemas/json/tsdrc.json: 1 version(s) | Min-Count: 64 Max-Count: 64
+src/schemas/json/nuget-project-3.3.0.json: 1 version(s) | Min-Count: 92 Max-Count: 92
+src/schemas/json/csscomb.json: 1 version(s) | Min-Count: 95 Max-Count: 95
+src/schemas/json/band-manifest.json: 1 version(s) | Min-Count: 108 Max-Count: 108
+src/schemas/json/htmlhint.json: 1 version(s) | Min-Count: 114 Max-Count: 114
+src/schemas/json/jsinspectrc.json: 1 version(s) | Min-Count: 114 Max-Count: 114
+src/schemas/json/geojson.json: 1 version(s) | Min-Count: 158 Max-Count: 158
+src/schemas/json/modernizrrc.json: 1 version(s) | Min-Count: 171 Max-Count: 171
+src/schemas/json/project-1.0.0-rc1.json: 1 version(s) | Min-Count: 181 Max-Count: 181
+src/schemas/json/mycode.json: 1 version(s) | Min-Count: 204 Max-Count: 204
+src/schemas/json/stylintrc.json: 1 version(s) | Min-Count: 223 Max-Count: 223
+src/schemas/json/schema-org-action.json: 1 version(s) | Min-Count: 256 Max-Count: 256
+src/schemas/json/schema-org-contact-point.json: 1 version(s) | Min-Count: 256 Max-Count: 256
+src/schemas/json/schema-org-place.json: 1 version(s) | Min-Count: 256 Max-Count: 256
+src/schemas/json/content-security-policy-report-2.json: 1 version(s) | Min-Count: 257 Max-Count: 257
+src/schemas/json/json-api-1.0.json: 1 version(s) | Min-Count: 259 Max-Count: 259
+src/schemas/json/commands.json: 1 version(s) | Min-Count: 264 Max-Count: 264
+src/schemas/json/compilerconfig.json: 1 version(s) | Min-Count: 266 Max-Count: 266
+src/schemas/json/compilerdefaults.json: 1 version(s) | Min-Count: 266 Max-Count: 266
+src/schemas/json/jsbeautifyrc-nested.json: 1 version(s) | Min-Count: 291 Max-Count: 291
+src/schemas/json/apple-app-site-association.json: 1 version(s) | Min-Count: 314 Max-Count: 314
+src/schemas/json/mimetypes.json: 1 version(s) | Min-Count: 337 Max-Count: 337
+src/schemas/json/ui5-manifest.json: 1 version(s) | Min-Count: 366 Max-Count: 366
+src/schemas/json/creatomic.json: 1 version(s) | Min-Count: 373 Max-Count: 373
+src/schemas/json/jasonette.json: 1 version(s) | Min-Count: 394 Max-Count: 394
+src/schemas/json/prettierrc-1.8.2.json: 1 version(s) | Min-Count: 445 Max-Count: 445
+src/schemas/json/typewiz.json: 1 version(s) | Min-Count: 475 Max-Count: 475
+src/schemas/json/foxx-manifest.json: 1 version(s) | Min-Count: 479 Max-Count: 479
+src/schemas/json/vsls.json: 1 version(s) | Min-Count: 480 Max-Count: 480
+src/schemas/json/phraseapp.json: 1 version(s) | Min-Count: 501 Max-Count: 501
+src/schemas/json/licenses.1.json: 1 version(s) | Min-Count: 519 Max-Count: 519
+src/schemas/json/toolinfo.1.1.0.json: 1 version(s) | Min-Count: 519 Max-Count: 519
+src/schemas/json/nlu.json: 1 version(s) | Min-Count: 541 Max-Count: 541
+src/schemas/json/clasp.json: 1 version(s) | Min-Count: 550 Max-Count: 550
+src/schemas/json/datalogic-scan2deploy-android.json: 1 version(s) | Min-Count: 573 Max-Count: 573
+src/schemas/json/datalogic-scan2deploy-ce.json: 1 version(s) | Min-Count: 573 Max-Count: 573
+src/schemas/json/pocketmine-plugin.json: 1 version(s) | Min-Count: 574 Max-Count: 574
+src/schemas/json/sarif-2.0.0-csd.2.beta.2018-10-10.json: 1 version(s) | Min-Count: 583 Max-Count: 583
+src/schemas/json/pyrseas-0.8.json: 1 version(s) | Min-Count: 598 Max-Count: 598
+src/schemas/json/ocelot.json: 1 version(s) | Min-Count: 605 Max-Count: 605
+src/schemas/json/nodemon.json: 1 version(s) | Min-Count: 609 Max-Count: 609
+src/schemas/json/package.manifest-7.0.0.json: 1 version(s) | Min-Count: 622 Max-Count: 622
+src/schemas/json/npmpackagejsonlintrc.json: 1 version(s) | Min-Count: 634 Max-Count: 634
+src/schemas/json/sarif-2.0.0-csd.2.beta.2019-01-09.json: 1 version(s) | Min-Count: 644 Max-Count: 644
+src/schemas/json/sarif-2.0.0-csd.2.beta.2019-01-24.json: 1 version(s) | Min-Count: 644 Max-Count: 644
+src/schemas/json/vsconfig.json: 1 version(s) | Min-Count: 666 Max-Count: 666
+src/schemas/json/lsdlschema-0.7.json: 1 version(s) | Min-Count: 671 Max-Count: 671
+src/schemas/json/backportrc.json: 1 version(s) | Min-Count: 673 Max-Count: 673
+src/schemas/json/ts-force-config.json: 1 version(s) | Min-Count: 675 Max-Count: 675
+src/schemas/json/sarif-2.1.0-rtm.0.json: 1 version(s) | Min-Count: 688 Max-Count: 688
+src/schemas/json/sarif-2.1.0-rtm.1.json: 1 version(s) | Min-Count: 698 Max-Count: 698
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.1.json: 1 version(s) | Min-Count: 698 Max-Count: 698
+src/schemas/json/sourcehut-build.json: 1 version(s) | Min-Count: 699 Max-Count: 699
+src/schemas/json/electron-builder.json: 1 version(s) | Min-Count: 705 Max-Count: 705
+src/schemas/json/drush.site.yml.json: 1 version(s) | Min-Count: 711 Max-Count: 711
+src/schemas/json/lintstagedrc.schema.json: 1 version(s) | Min-Count: 712 Max-Count: 712
+src/schemas/json/mtaext.json: 1 version(s) | Min-Count: 713 Max-Count: 713
+src/schemas/json/sarif-2.1.0-rtm.2.json: 1 version(s) | Min-Count: 715 Max-Count: 715
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.2.json: 1 version(s) | Min-Count: 715 Max-Count: 715
+src/schemas/json/cloudbuild.json: 1 version(s) | Min-Count: 717 Max-Count: 717
+src/schemas/json/sarif-2.1.0-rtm.3.json: 1 version(s) | Min-Count: 721 Max-Count: 721
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.3.json: 1 version(s) | Min-Count: 721 Max-Count: 721
+src/schemas/json/sarif-2.1.0-rtm.4.json: 1 version(s) | Min-Count: 725 Max-Count: 725
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.4.json: 1 version(s) | Min-Count: 725 Max-Count: 725
+src/schemas/json/opspec-io-0.1.7.json: 1 version(s) | Min-Count: 729 Max-Count: 729
+src/schemas/json/fabric.mod.json: 1 version(s) | Min-Count: 763 Max-Count: 763
+src/schemas/json/lsdlschema-1.2.json: 1 version(s) | Min-Count: 782 Max-Count: 782
+src/schemas/json/prometheus.json: 1 version(s) | Min-Count: 785 Max-Count: 785
+src/schemas/json/prometheus.rules.json: 1 version(s) | Min-Count: 785 Max-Count: 785
+src/schemas/json/esquio.json: 1 version(s) | Min-Count: 804 Max-Count: 804
+src/schemas/json/ninjs-1.0.json: 1 version(s) | Min-Count: 824 Max-Count: 824
+src/schemas/json/ninjs-1.2.json: 1 version(s) | Min-Count: 824 Max-Count: 824
+src/schemas/json/BizTalkServerApplicationSchema.json: 1 version(s) | Min-Count: 840 Max-Count: 840
+src/schemas/json/fantomas.json: 1 version(s) | Min-Count: 845 Max-Count: 845
+src/schemas/json/neoload.json: 1 version(s) | Min-Count: 846 Max-Count: 846
+src/schemas/json/compile-commands.json: 1 version(s) | Min-Count: 886 Max-Count: 886
+src/schemas/json/nodehawkrc.json: 1 version(s) | Min-Count: 894 Max-Count: 894
+src/schemas/json/sarif-2.1.0-rtm.5.json: 1 version(s) | Min-Count: 902 Max-Count: 902
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.5.json: 1 version(s) | Min-Count: 902 Max-Count: 902
+src/schemas/json/grafana-dashboard-5.x.json: 1 version(s) | Min-Count: 909 Max-Count: 909
+src/schemas/json/vim-addon-info.json: 1 version(s) | Min-Count: 917 Max-Count: 917
+src/schemas/json/lsdlschema-2.0.json: 1 version(s) | Min-Count: 930 Max-Count: 930
+src/schemas/json/expo-37.0.0.json: 1 version(s) | Min-Count: 932 Max-Count: 932
+src/schemas/json/ksp-avc.json: 1 version(s) | Min-Count: 944 Max-Count: 944
+src/schemas/json/container-structure-test.json: 1 version(s) | Min-Count: 949 Max-Count: 949
+src/schemas/json/hadolint.json: 1 version(s) | Min-Count: 949 Max-Count: 949
+src/schemas/json/pre-commit-config.json: 1 version(s) | Min-Count: 956 Max-Count: 956
+src/schemas/json/gitversion.json: 1 version(s) | Min-Count: 961 Max-Count: 961
+src/schemas/json/nest-cli.json: 1 version(s) | Min-Count: 969 Max-Count: 969
+src/schemas/json/servicehub.config.schema.json: 1 version(s) | Min-Count: 990 Max-Count: 990
+src/schemas/json/servicehub.service.schema.json: 1 version(s) | Min-Count: 990 Max-Count: 990
+src/schemas/json/winget-pkgs.json: 1 version(s) | Min-Count: 993 Max-Count: 993
+src/schemas/json/commitlintrc.json: 1 version(s) | Min-Count: 1009 Max-Count: 1009
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Deleted History:
+src/schemas/json/library-cdnjs.json: 9 version(s) | Min-Count: 299 Max-Count: 318
+src/schemas/json/sarif-1.0.0-beta.5.json: 8 version(s) | Min-Count: 179 Max-Count: 532
+src/schemas/json/library-filesystem.json: 7 version(s) | Min-Count: 301 Max-Count: 318
+src/schemas/json/sarif-1.0.0-beta.4.json: 3 version(s) | Min-Count: 174 Max-Count: 532
+src/schemas/json/a11yrc.json: 2 version(s) | Min-Count: 264 Max-Count: 265
+src/schemas/json/docker-compose-1.0.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-2.0.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-2.1.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-2.2.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-2.3.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-2.4.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-3.0.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-3.1.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-3.2.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-3.3.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-3.4.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-3.5.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-3.6.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-3.7.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/docker-compose-3.8.json: 2 version(s) | Min-Count: 896 Max-Count: 898
+src/schemas/json/ui5.yaml.json: 2 version(s) | Min-Count: 922 Max-Count: 926
+src/schemas/json/graphql-mesh-0.0.16.json: 2 version(s) | Min-Count: 913 Max-Count: 975
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Change types from GIT diff:
+{'A': 248, 'M': 808, 'R': 13}
+################################################## FILTERED ##################################################
+Filtered by draft filter <class 'filter_filters.Draft4Filter'>:
+Total filtered files: 41 (of 1069)
+Filtered files:
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/813#c955a581c324ad69b00513429cb5721fae0d12ff/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/818#6b1aa1fdd992bb249e0c812bbd8ae594daa7568d/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/826#0f14156895e0e456381c626ff17bfeac008a5914/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/834#7714839936c11cbb7156abb5e285400921857232/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/837#cba8ce2c962d87df7916af4700d153d861ad549a/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/843#8991d77dd7616265b2303fe704f0a6695ebe42a7/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/867#50fbd4ab20fafc9a23d7692796730f24bd592305/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/869#bcfe6050afe8d2e0b4151a82e5a8701a097749ad/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/882#b45cfc6c7eb7dc5a44e7e0fc443991b301551ff4/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/942#93953b1eeaf681a79d74a3556726fd02ba3f037c/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/954#ea700feb53e11f94f8e774dde1b3fc14750ed6f1/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/957#edebbe66bd2d5d288eb2a63aab952d544fcdc277/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/966#df66ca909b519759e8701e5cea30ee9b369b2a08/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/968#d903ee441606377ebe46dc498eabdacc424d5975/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/983#201711cbb2da13026cbe3268d341918cf5ccc6df/src/schemas/json/github-workflow.json
+	File: src/schemas/json/github-workflow.json | History: Before: 16 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/1005#0a36a6e79e1d0d9d54eef1a55dcbc75a27078ad2/src/schemas/json/github-workflow.json
+	File: src/schemas/json/composer.json | History: Before: 15 - After: 14  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/7#2a69749847fd2a9ed7a020c0f5da0fb39dfeb6f5/src/schemas/json/composer.json
+	File: src/schemas/json/drone.json | History: Before: 7 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/747#dcdd68868c8f8a83e694901008366dcfdd89b05b/src/schemas/json/drone.json
+	File: src/schemas/json/drone.json | History: Before: 7 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/761#ca12aeb77254adfb9638909db18da5150121489b/src/schemas/json/drone.json
+	File: src/schemas/json/drone.json | History: Before: 7 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/786#af92489871a7f03a971e8f6049ad2680cacd8a22/src/schemas/json/drone.json
+	File: src/schemas/json/drone.json | History: Before: 7 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/923#03a73ca4ef45f1cc478fa882ef3a7b626bd4861b/src/schemas/json/drone.json
+	File: src/schemas/json/drone.json | History: Before: 7 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/933#d875fb458711af7fe0a63b18b471e52040480306/src/schemas/json/drone.json
+	File: src/schemas/json/drone.json | History: Before: 7 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/935#deba0f501a15967939f5e514844ae038c75c81c9/src/schemas/json/drone.json
+	File: src/schemas/json/drone.json | History: Before: 7 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/1012#1c1138a00172d1711d9798408f34f536809497b0/src/schemas/json/drone.json
+	File: src/schemas/json/codecov.json | History: Before: 5 - After: 4  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/870#a440decfdeb539cb68f155ab5dd621f50e439408/src/schemas/json/codecov.json
+	File: src/schemas/json/ninjs-1.1.json | History: Before: 3 - After: 2  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/45#4bb8f762d6b3d1f53e304e8e8a3ba11cc4053fb5/src/schemas/json/ninjs.json
+	File: src/schemas/json/github-action.json | History: Before: 2 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/812#94bae8002941bd166b9565d205c8b191577496ba/src/schemas/json/github-action.json
+	File: src/schemas/json/github-action.json | History: Before: 2 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/837#cba8ce2c962d87df7916af4700d153d861ad549a/src/schemas/json/github-action.json
+	File: src/schemas/json/schema-draft-v4.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/2#a9b64ffd166fa863f9b2143aacd0cbb6b10ee1dc/src/schemas/json/schema-draft-v4.json
+	File: src/schemas/json/datalogic-scan2deploy-android.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/573#9980d0e9cc4e6688a15bc8f5a35cbf7cfd6bfaf3/src/schemas/json/datalogic-scan2deploy-android.json
+	File: src/schemas/json/datalogic-scan2deploy-ce.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/573#9980d0e9cc4e6688a15bc8f5a35cbf7cfd6bfaf3/src/schemas/json/datalogic-scan2deploy-ce.json
+	File: src/schemas/json/pyrseas-0.8.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/598#97584c087d8c25f5fcbfc55d47212bbd6076623c/src/schemas/json/pyrseas-0.8.json
+	File: src/schemas/json/nodemon.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/609#80b7826df378a1a6db7af5fadc192e14089ad936/src/schemas/json/nodemon.json
+	File: src/schemas/json/lintstagedrc.schema.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/712#2f40e0d10c31f660713590c30f7bf14345bb236f/src/schemas/json/lintstagedrc.schema.json
+	File: src/schemas/json/opspec-io-0.1.7.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/729#55f714e2d507755750d808c324da23883e910f9f/src/schemas/json/opspec-io-0.1.7.json
+	File: src/schemas/json/fabric.mod.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/763#c6f7a21ec3bb8941be8522089b502d64caae70e8/src/schemas/json/fabric.mod.json
+	File: src/schemas/json/prometheus.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/785#f7432272a99f4031d670e65ecf14afab115c3b5f/src/schemas/json/prometheus.json
+	File: src/schemas/json/ninjs-1.0.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/824#90a810b432f89a2a6d1eee5af4dc3a41986eabb6/src/schemas/json/ninjs-1.0.json
+	File: src/schemas/json/neoload.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/846#9b2741719ba9355dbd3f43c4cf73eab76e5093b1/src/schemas/json/neoload.json
+	File: src/schemas/json/hadolint.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/949#173a879a021f7f70827a4ae793818749880af95e/src/schemas/json/hadolint.json
+	File: src/schemas/json/commitlintrc.json | History: Before: 1 - After: 0  | Path: /Users/michael/Forschung/JSONSchemaContainment/public-git-jsc-study/schemastore_history/commits/1009#59ea7b514da9a37ee480370d5c4db9c83e47ac61/src/schemas/json/commitlintrc.json
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Total files: 232
+Total deleted files: 22
+Total file versions: 1028
+Total deleted versions: 41
+Total successive versions: 796
+Total successive deleted versions: 19
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Unique commit count (number of total (current + deleted) repositories affected by 'paths':): 831
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Occurrences:
+History: 67 (1 schema(s))
+History: 66 (1 schema(s))
+History: 55 (1 schema(s))
+History: 32 (2 schema(s))
+History: 30 (3 schema(s))
+History: 29 (1 schema(s))
+History: 14 (2 schema(s))
+History: 15 (1 schema(s))
+History: 12 (1 schema(s))
+History: 11 (3 schema(s))
+History: 10 (3 schema(s))
+History: 9 (1 schema(s))
+History: 8 (5 schema(s))
+History: 7 (5 schema(s))
+History: 6 (12 schema(s))
+History: 5 (12 schema(s))
+History: 4 (19 schema(s))
+History: 3 (23 schema(s))
+History: 2 (42 schema(s))
+History: 1 (94 schema(s))
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Available History:
+src/schemas/json/tsconfig.json: 67 version(s) | Min-Count: 46 Max-Count: 964
+src/schemas/json/tslint.json: 66 version(s) | Min-Count: 2 Max-Count: 998
+src/schemas/json/travis.json: 55 version(s) | Min-Count: 409 Max-Count: 1002
+src/schemas/json/sarif.json: 32 version(s) | Min-Count: 111 Max-Count: 902
+src/schemas/json/gitlab-ci.json: 32 version(s) | Min-Count: 540 Max-Count: 996
+src/schemas/json/package.json: 30 version(s) | Min-Count: 2 Max-Count: 1000
+src/schemas/json/project.json: 30 version(s) | Min-Count: 2 Max-Count: 214
+src/schemas/json/jsconfig.json: 30 version(s) | Min-Count: 222 Max-Count: 892
+src/schemas/json/eslintrc.json: 29 version(s) | Min-Count: 94 Max-Count: 995
+src/schemas/json/composer.json: 14 version(s) | Min-Count: 19 Max-Count: 946
+src/schemas/json/circleciconfig.json: 15 version(s) | Min-Count: 424 Max-Count: 1013
+src/schemas/json/libman.json: 14 version(s) | Min-Count: 299 Max-Count: 467
+src/schemas/json/prettierrc.json: 12 version(s) | Min-Count: 358 Max-Count: 911
+src/schemas/json/host.json: 11 version(s) | Min-Count: 269 Max-Count: 860
+src/schemas/json/appveyor.json: 11 version(s) | Min-Count: 410 Max-Count: 988
+src/schemas/json/cloud-sdk-pipeline-config-schema.json: 11 version(s) | Min-Count: 790 Max-Count: 1003
+src/schemas/json/resume.json: 10 version(s) | Min-Count: 2 Max-Count: 871
+src/schemas/json/web-manifest.json: 10 version(s) | Min-Count: 2 Max-Count: 758
+src/schemas/json/appsettings.json: 10 version(s) | Min-Count: 368 Max-Count: 938
+src/schemas/json/launchsettings.json: 9 version(s) | Min-Count: 24 Max-Count: 472
+src/schemas/json/babelrc.json: 8 version(s) | Min-Count: 111 Max-Count: 734
+src/schemas/json/sarif-1.0.0.json: 8 version(s) | Min-Count: 192 Max-Count: 258
+src/schemas/json/stylelintrc.json: 8 version(s) | Min-Count: 246 Max-Count: 953
+src/schemas/json/template.json: 8 version(s) | Min-Count: 324 Max-Count: 527
+src/schemas/json/appsscript.json: 8 version(s) | Min-Count: 548 Max-Count: 875
+src/schemas/json/chutzpah.json: 7 version(s) | Min-Count: 2 Max-Count: 571
+src/schemas/json/jshintrc.json: 7 version(s) | Min-Count: 2 Max-Count: 637
+src/schemas/json/swagger-2.0.json: 7 version(s) | Min-Count: 2 Max-Count: 483
+src/schemas/json/xunit.runner.schema.json: 7 version(s) | Min-Count: 89 Max-Count: 773
+src/schemas/json/function.json: 7 version(s) | Min-Count: 276 Max-Count: 373
+src/schemas/json/bower.json: 6 version(s) | Min-Count: 2 Max-Count: 121
+src/schemas/json/bowerrc.json: 6 version(s) | Min-Count: 2 Max-Count: 160
+src/schemas/json/chrome-manifest.json: 6 version(s) | Min-Count: 2 Max-Count: 684
+src/schemas/json/global.json: 6 version(s) | Min-Count: 2 Max-Count: 776
+src/schemas/json/package.manifest.json: 6 version(s) | Min-Count: 2 Max-Count: 639
+src/schemas/json/bundleconfig.json: 6 version(s) | Min-Count: 208 Max-Count: 279
+src/schemas/json/vs-nesting.json: 6 version(s) | Min-Count: 395 Max-Count: 658
+src/schemas/json/install.json: 6 version(s) | Min-Count: 355 Max-Count: 615
+src/schemas/json/cirrus.json: 6 version(s) | Min-Count: 528 Max-Count: 888
+src/schemas/json/ksp-ckan.json: 6 version(s) | Min-Count: 202 Max-Count: 943
+src/schemas/json/cosmos-config.json: 6 version(s) | Min-Count: 728 Max-Count: 1015
+src/schemas/json/ansible-stable-2.9.json: 6 version(s) | Min-Count: 884 Max-Count: 991
+src/schemas/json/jscsrc.json: 5 version(s) | Min-Count: 2 Max-Count: 146
+src/schemas/json/project-1.0.0-rc2.json: 5 version(s) | Min-Count: 181 Max-Count: 214
+src/schemas/json/webextension.json: 5 version(s) | Min-Count: 349 Max-Count: 476
+src/schemas/json/ansible-stable-2.1.json: 5 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/ansible-stable-2.2.json: 5 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/ansible-stable-2.3.json: 5 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/ansible-stable-2.4.json: 5 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/ansible-stable-2.5.json: 5 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/renovate.json: 5 version(s) | Min-Count: 524 Max-Count: 925
+src/schemas/json/azure-iot-edge-deployment-2.0.json: 5 version(s) | Min-Count: 677 Max-Count: 927
+src/schemas/json/azure-iot-edge-deployment-template-2.0.json: 5 version(s) | Min-Count: 677 Max-Count: 751
+src/schemas/json/mta.json: 5 version(s) | Min-Count: 691 Max-Count: 822
+src/schemas/json/codecov.json: 4 version(s) | Min-Count: 746 Max-Count: 861
+src/schemas/json/jsonld.json: 4 version(s) | Min-Count: 2 Max-Count: 483
+src/schemas/json/nuget-project.json: 4 version(s) | Min-Count: 80 Max-Count: 231
+src/schemas/json/bootstraprc.json: 4 version(s) | Min-Count: 114 Max-Count: 134
+src/schemas/json/typings.json: 4 version(s) | Min-Count: 136 Max-Count: 219
+src/schemas/json/typingsrc.json: 4 version(s) | Min-Count: 139 Max-Count: 250
+src/schemas/json/openfin.json: 4 version(s) | Min-Count: 297 Max-Count: 897
+src/schemas/json/imageoptimizer.json: 4 version(s) | Min-Count: 376 Max-Count: 380
+src/schemas/json/asmdef.json: 4 version(s) | Min-Count: 416 Max-Count: 520
+src/schemas/json/up.json: 4 version(s) | Min-Count: 426 Max-Count: 464
+src/schemas/json/prisma.json: 4 version(s) | Min-Count: 452 Max-Count: 807
+src/schemas/json/lsdlschema.json: 4 version(s) | Min-Count: 465 Max-Count: 930
+src/schemas/json/ansible-stable-2.0.json: 4 version(s) | Min-Count: 509 Max-Count: 567
+src/schemas/json/azure-iot-edge-deployment-1.0.json: 4 version(s) | Min-Count: 642 Max-Count: 669
+src/schemas/json/typedoc.json: 4 version(s) | Min-Count: 682 Max-Count: 885
+src/schemas/json/huskyrc.json: 4 version(s) | Min-Count: 686 Max-Count: 960
+src/schemas/json/kustomization.json: 4 version(s) | Min-Count: 696 Max-Count: 1004
+src/schemas/json/sarif-external-property-file.json: 4 version(s) | Min-Count: 715 Max-Count: 902
+src/schemas/json/jsdoc-1.0.0.json: 4 version(s) | Min-Count: 907 Max-Count: 941
+src/schemas/json/json-patch.json: 3 version(s) | Min-Count: 2 Max-Count: 965
+src/schemas/json/schema-catalog.json: 3 version(s) | Min-Count: 2 Max-Count: 679
+src/schemas/json/contribute.json: 3 version(s) | Min-Count: 7 Max-Count: 955
+src/schemas/json/project-1.0.0-beta4.json: 3 version(s) | Min-Count: 40 Max-Count: 62
+src/schemas/json/project-1.0.0-beta5.json: 3 version(s) | Min-Count: 75 Max-Count: 78
+src/schemas/json/project-1.0.0-beta6.json: 3 version(s) | Min-Count: 75 Max-Count: 78
+src/schemas/json/jsbeautifyrc.json: 3 version(s) | Min-Count: 114 Max-Count: 438
+src/schemas/json/pattern.json: 3 version(s) | Min-Count: 135 Max-Count: 228
+src/schemas/json/sprite.json: 3 version(s) | Min-Count: 198 Max-Count: 245
+src/schemas/json/jdt.json: 3 version(s) | Min-Count: 311 Max-Count: 313
+src/schemas/json/vs-2017.3.host.json: 3 version(s) | Min-Count: 329 Max-Count: 443
+src/schemas/json/dotnetcli.host.json: 3 version(s) | Min-Count: 330 Max-Count: 334
+src/schemas/json/solidaritySchema.json: 3 version(s) | Min-Count: 401 Max-Count: 760
+src/schemas/json/vsext.json: 3 version(s) | Min-Count: 420 Max-Count: 557
+src/schemas/json/sarif-2.0.0.json: 3 version(s) | Min-Count: 532 Max-Count: 568
+src/schemas/json/package.manifest-8.0.0.json: 3 version(s) | Min-Count: 622 Max-Count: 639
+src/schemas/json/azure-iot-edge-deployment-template-1.0.json: 3 version(s) | Min-Count: 650 Max-Count: 655
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.0.json: 3 version(s) | Min-Count: 688 Max-Count: 694
+src/schemas/json/behat.json: 3 version(s) | Min-Count: 709 Max-Count: 887
+src/schemas/json/mtad.json: 3 version(s) | Min-Count: 713 Max-Count: 770
+src/schemas/json/vss-extension.json: 3 version(s) | Min-Count: 773 Max-Count: 977
+src/schemas/json/web-types.json: 3 version(s) | Min-Count: 781 Max-Count: 1010
+src/schemas/json/ninjs-1.1.json: 2 version(s) | Min-Count: 483 Max-Count: 824
+src/schemas/json/httpmockrc.json: 3 version(s) | Min-Count: 844 Max-Count: 937
+src/schemas/json/coffeelint.json: 2 version(s) | Min-Count: 2 Max-Count: 676
+src/schemas/json/config.json: 2 version(s) | Min-Count: 2 Max-Count: 77
+src/schemas/json/resjson.json: 2 version(s) | Min-Count: 2 Max-Count: 293
+src/schemas/json/sourcemap-v3.json: 2 version(s) | Min-Count: 2 Max-Count: 162
+src/schemas/json/webjob-publish-settings.json: 2 version(s) | Min-Count: 2 Max-Count: 30
+src/schemas/json/templatesources.json: 2 version(s) | Min-Count: 70 Max-Count: 71
+src/schemas/json/tsd.json: 2 version(s) | Min-Count: 89 Max-Count: 137
+src/schemas/json/csslintrc.json: 2 version(s) | Min-Count: 93 Max-Count: 94
+src/schemas/json/project-1.0.0-beta8.json: 2 version(s) | Min-Count: 98 Max-Count: 103
+src/schemas/json/haxelib.json: 2 version(s) | Min-Count: 168 Max-Count: 780
+src/schemas/json/vega-lite.json: 2 version(s) | Min-Count: 193 Max-Count: 407
+src/schemas/json/vega.json: 2 version(s) | Min-Count: 193 Max-Count: 406
+src/schemas/json/schema-org-thing.json: 2 version(s) | Min-Count: 243 Max-Count: 256
+src/schemas/json/docfx.json: 2 version(s) | Min-Count: 263 Max-Count: 294
+src/schemas/json/omnisharp.json: 2 version(s) | Min-Count: 277 Max-Count: 1008
+src/schemas/json/proxies.json: 2 version(s) | Min-Count: 321 Max-Count: 365
+src/schemas/json/feed.json: 2 version(s) | Min-Count: 340 Max-Count: 341
+src/schemas/json/vsix-manifestinjection.json: 2 version(s) | Min-Count: 422 Max-Count: 429
+src/schemas/json/cryproj.json: 2 version(s) | Min-Count: 456 Max-Count: 493
+src/schemas/json/vsix-publish.json: 2 version(s) | Min-Count: 483 Max-Count: 580
+src/schemas/json/cryproj.52.schema.json: 2 version(s) | Min-Count: 493 Max-Count: 517
+src/schemas/json/cryproj.53.schema.json: 2 version(s) | Min-Count: 493 Max-Count: 517
+src/schemas/json/cryproj.54.schema.json: 2 version(s) | Min-Count: 493 Max-Count: 517
+src/schemas/json/cryproj.55.schema.json: 2 version(s) | Min-Count: 493 Max-Count: 517
+src/schemas/json/cryproj.dev.schema.json: 2 version(s) | Min-Count: 493 Max-Count: 517
+src/schemas/json/avro-avsc.json: 2 version(s) | Min-Count: 507 Max-Count: 817
+src/schemas/json/npm-link-up.json: 2 version(s) | Min-Count: 510 Max-Count: 541
+src/schemas/json/bozr.json: 2 version(s) | Min-Count: 539 Max-Count: 716
+src/schemas/json/bukkit-plugin.json: 2 version(s) | Min-Count: 561 Max-Count: 831
+src/schemas/json/bungee-plugin.json: 2 version(s) | Min-Count: 561 Max-Count: 900
+src/schemas/json/nswag.json: 2 version(s) | Min-Count: 617 Max-Count: 736
+src/schemas/json/ansible-stable-2.6.json: 2 version(s) | Min-Count: 664 Max-Count: 794
+src/schemas/json/ansible-stable-2.7.json: 2 version(s) | Min-Count: 664 Max-Count: 794
+src/schemas/json/lsdlschema-1.0.json: 2 version(s) | Min-Count: 671 Max-Count: 782
+src/schemas/json/lerna.json: 2 version(s) | Min-Count: 724 Max-Count: 783
+src/schemas/json/hemtt-0.6.2.json: 2 version(s) | Min-Count: 741 Max-Count: 951
+src/schemas/json/dss-2.0.0.json: 2 version(s) | Min-Count: 562 Max-Count: 765
+src/schemas/json/dependabot.json: 2 version(s) | Min-Count: 779 Max-Count: 852
+src/schemas/json/pubspec.json: 2 version(s) | Min-Count: 792 Max-Count: 803
+src/schemas/json/now.json: 2 version(s) | Min-Count: 806 Max-Count: 934
+src/schemas/json/jekyll.json: 2 version(s) | Min-Count: 811 Max-Count: 836
+src/schemas/json/component.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/epr-manifest.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-clean-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-copy-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-cssmin-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-jshint-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/grunt-watch-task.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/host-meta.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/settings.job.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/webjobs-list.json: 1 version(s) | Min-Count: 2 Max-Count: 2
+src/schemas/json/debugsettings.json: 1 version(s) | Min-Count: 35 Max-Count: 35
+src/schemas/json/project-1.0.0-beta3.json: 1 version(s) | Min-Count: 40 Max-Count: 40
+src/schemas/json/tsdrc.json: 1 version(s) | Min-Count: 64 Max-Count: 64
+src/schemas/json/nuget-project-3.3.0.json: 1 version(s) | Min-Count: 92 Max-Count: 92
+src/schemas/json/csscomb.json: 1 version(s) | Min-Count: 95 Max-Count: 95
+src/schemas/json/band-manifest.json: 1 version(s) | Min-Count: 108 Max-Count: 108
+src/schemas/json/htmlhint.json: 1 version(s) | Min-Count: 114 Max-Count: 114
+src/schemas/json/jsinspectrc.json: 1 version(s) | Min-Count: 114 Max-Count: 114
+src/schemas/json/geojson.json: 1 version(s) | Min-Count: 158 Max-Count: 158
+src/schemas/json/modernizrrc.json: 1 version(s) | Min-Count: 171 Max-Count: 171
+src/schemas/json/project-1.0.0-rc1.json: 1 version(s) | Min-Count: 181 Max-Count: 181
+src/schemas/json/mycode.json: 1 version(s) | Min-Count: 204 Max-Count: 204
+src/schemas/json/stylintrc.json: 1 version(s) | Min-Count: 223 Max-Count: 223
+src/schemas/json/schema-org-action.json: 1 version(s) | Min-Count: 256 Max-Count: 256
+src/schemas/json/schema-org-contact-point.json: 1 version(s) | Min-Count: 256 Max-Count: 256
+src/schemas/json/schema-org-place.json: 1 version(s) | Min-Count: 256 Max-Count: 256
+src/schemas/json/content-security-policy-report-2.json: 1 version(s) | Min-Count: 257 Max-Count: 257
+src/schemas/json/json-api-1.0.json: 1 version(s) | Min-Count: 259 Max-Count: 259
+src/schemas/json/commands.json: 1 version(s) | Min-Count: 264 Max-Count: 264
+src/schemas/json/compilerconfig.json: 1 version(s) | Min-Count: 266 Max-Count: 266
+src/schemas/json/compilerdefaults.json: 1 version(s) | Min-Count: 266 Max-Count: 266
+src/schemas/json/jsbeautifyrc-nested.json: 1 version(s) | Min-Count: 291 Max-Count: 291
+src/schemas/json/apple-app-site-association.json: 1 version(s) | Min-Count: 314 Max-Count: 314
+src/schemas/json/mimetypes.json: 1 version(s) | Min-Count: 337 Max-Count: 337
+src/schemas/json/ui5-manifest.json: 1 version(s) | Min-Count: 366 Max-Count: 366
+src/schemas/json/creatomic.json: 1 version(s) | Min-Count: 373 Max-Count: 373
+src/schemas/json/jasonette.json: 1 version(s) | Min-Count: 394 Max-Count: 394
+src/schemas/json/prettierrc-1.8.2.json: 1 version(s) | Min-Count: 445 Max-Count: 445
+src/schemas/json/typewiz.json: 1 version(s) | Min-Count: 475 Max-Count: 475
+src/schemas/json/foxx-manifest.json: 1 version(s) | Min-Count: 479 Max-Count: 479
+src/schemas/json/vsls.json: 1 version(s) | Min-Count: 480 Max-Count: 480
+src/schemas/json/phraseapp.json: 1 version(s) | Min-Count: 501 Max-Count: 501
+src/schemas/json/licenses.1.json: 1 version(s) | Min-Count: 519 Max-Count: 519
+src/schemas/json/toolinfo.1.1.0.json: 1 version(s) | Min-Count: 519 Max-Count: 519
+src/schemas/json/nlu.json: 1 version(s) | Min-Count: 541 Max-Count: 541
+src/schemas/json/clasp.json: 1 version(s) | Min-Count: 550 Max-Count: 550
+src/schemas/json/pocketmine-plugin.json: 1 version(s) | Min-Count: 574 Max-Count: 574
+src/schemas/json/sarif-2.0.0-csd.2.beta.2018-10-10.json: 1 version(s) | Min-Count: 583 Max-Count: 583
+src/schemas/json/ocelot.json: 1 version(s) | Min-Count: 605 Max-Count: 605
+src/schemas/json/package.manifest-7.0.0.json: 1 version(s) | Min-Count: 622 Max-Count: 622
+src/schemas/json/npmpackagejsonlintrc.json: 1 version(s) | Min-Count: 634 Max-Count: 634
+src/schemas/json/sarif-2.0.0-csd.2.beta.2019-01-09.json: 1 version(s) | Min-Count: 644 Max-Count: 644
+src/schemas/json/sarif-2.0.0-csd.2.beta.2019-01-24.json: 1 version(s) | Min-Count: 644 Max-Count: 644
+src/schemas/json/vsconfig.json: 1 version(s) | Min-Count: 666 Max-Count: 666
+src/schemas/json/lsdlschema-0.7.json: 1 version(s) | Min-Count: 671 Max-Count: 671
+src/schemas/json/backportrc.json: 1 version(s) | Min-Count: 673 Max-Count: 673
+src/schemas/json/ts-force-config.json: 1 version(s) | Min-Count: 675 Max-Count: 675
+src/schemas/json/sarif-2.1.0-rtm.0.json: 1 version(s) | Min-Count: 688 Max-Count: 688
+src/schemas/json/sarif-2.1.0-rtm.1.json: 1 version(s) | Min-Count: 698 Max-Count: 698
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.1.json: 1 version(s) | Min-Count: 698 Max-Count: 698
+src/schemas/json/sourcehut-build.json: 1 version(s) | Min-Count: 699 Max-Count: 699
+src/schemas/json/electron-builder.json: 1 version(s) | Min-Count: 705 Max-Count: 705
+src/schemas/json/drush.site.yml.json: 1 version(s) | Min-Count: 711 Max-Count: 711
+src/schemas/json/mtaext.json: 1 version(s) | Min-Count: 713 Max-Count: 713
+src/schemas/json/sarif-2.1.0-rtm.2.json: 1 version(s) | Min-Count: 715 Max-Count: 715
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.2.json: 1 version(s) | Min-Count: 715 Max-Count: 715
+src/schemas/json/cloudbuild.json: 1 version(s) | Min-Count: 717 Max-Count: 717
+src/schemas/json/sarif-2.1.0-rtm.3.json: 1 version(s) | Min-Count: 721 Max-Count: 721
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.3.json: 1 version(s) | Min-Count: 721 Max-Count: 721
+src/schemas/json/sarif-2.1.0-rtm.4.json: 1 version(s) | Min-Count: 725 Max-Count: 725
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.4.json: 1 version(s) | Min-Count: 725 Max-Count: 725
+src/schemas/json/lsdlschema-1.2.json: 1 version(s) | Min-Count: 782 Max-Count: 782
+src/schemas/json/prometheus.rules.json: 1 version(s) | Min-Count: 785 Max-Count: 785
+src/schemas/json/esquio.json: 1 version(s) | Min-Count: 804 Max-Count: 804
+src/schemas/json/ninjs-1.2.json: 1 version(s) | Min-Count: 824 Max-Count: 824
+src/schemas/json/BizTalkServerApplicationSchema.json: 1 version(s) | Min-Count: 840 Max-Count: 840
+src/schemas/json/fantomas.json: 1 version(s) | Min-Count: 845 Max-Count: 845
+src/schemas/json/compile-commands.json: 1 version(s) | Min-Count: 886 Max-Count: 886
+src/schemas/json/nodehawkrc.json: 1 version(s) | Min-Count: 894 Max-Count: 894
+src/schemas/json/sarif-2.1.0-rtm.5.json: 1 version(s) | Min-Count: 902 Max-Count: 902
+src/schemas/json/sarif-external-property-file-2.1.0-rtm.5.json: 1 version(s) | Min-Count: 902 Max-Count: 902
+src/schemas/json/grafana-dashboard-5.x.json: 1 version(s) | Min-Count: 909 Max-Count: 909
+src/schemas/json/vim-addon-info.json: 1 version(s) | Min-Count: 917 Max-Count: 917
+src/schemas/json/lsdlschema-2.0.json: 1 version(s) | Min-Count: 930 Max-Count: 930
+src/schemas/json/expo-37.0.0.json: 1 version(s) | Min-Count: 932 Max-Count: 932
+src/schemas/json/ksp-avc.json: 1 version(s) | Min-Count: 944 Max-Count: 944
+src/schemas/json/container-structure-test.json: 1 version(s) | Min-Count: 949 Max-Count: 949
+src/schemas/json/pre-commit-config.json: 1 version(s) | Min-Count: 956 Max-Count: 956
+src/schemas/json/gitversion.json: 1 version(s) | Min-Count: 961 Max-Count: 961
+src/schemas/json/nest-cli.json: 1 version(s) | Min-Count: 969 Max-Count: 969
+src/schemas/json/servicehub.config.schema.json: 1 version(s) | Min-Count: 990 Max-Count: 990
+src/schemas/json/servicehub.service.schema.json: 1 version(s) | Min-Count: 990 Max-Count: 990
+src/schemas/json/winget-pkgs.json: 1 version(s) | Min-Count: 993 Max-Count: 993
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Deleted History:
+src/schemas/json/library-cdnjs.json: 8 version(s) | Min-Count: 299 Max-Count: 307
+src/schemas/json/sarif-1.0.0-beta.5.json: 7 version(s) | Min-Count: 179 Max-Count: 191
+src/schemas/json/library-filesystem.json: 6 version(s) | Min-Count: 301 Max-Count: 309
+src/schemas/json/sarif-1.0.0-beta.4.json: 2 version(s) | Min-Count: 174 Max-Count: 191
+src/schemas/json/a11yrc.json: 1 version(s) | Min-Count: 264 Max-Count: 264
+src/schemas/json/docker-compose-1.0.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-2.0.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-2.1.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-2.2.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-2.3.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-2.4.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-3.0.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-3.1.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-3.2.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-3.3.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-3.4.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-3.5.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-3.6.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-3.7.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/docker-compose-3.8.json: 1 version(s) | Min-Count: 896 Max-Count: 896
+src/schemas/json/ui5.yaml.json: 1 version(s) | Min-Count: 922 Max-Count: 922
+src/schemas/json/graphql-mesh-0.0.16.json: 1 version(s) | Min-Count: 913 Max-Count: 913
+++++++++++++++++++++++++++++++++++++++++++++++++++
+Change types from GIT diff:
+{'A': 230, 'M': 785, 'R': 13}

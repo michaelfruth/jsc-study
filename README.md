@@ -31,8 +31,8 @@ The data produced by *git_file_changes.py* is the starting point for the other r
 It is recommended,to **not** apply the filter to the root-scripts due to following reason: Do a complete analysis of the *whole* dataset (using the root-scripts). Afterwards, the filter can be applied to the analysis-scripts, so there can be controlled which data should be filtered. This is much more efficient than computing the data produced by the root-scripts again and again with different filters.
 
 There are two kinds of filters: a "on-the-fly" filter and "file-filter". These kind of filters can be applied to almost every root-script (not recommended) and analysis-script. It is recommended to not use the "on-the-fly-filter". Each filter does the same: it filters the data beforehand and only the filtered data is processed. Each data produced by the root-scripts can be filtered, so there is no limitation. The "on-the-fly" filter computes the filtered data on runtime, so if the same on-the-fly-filter, e.g. "Draft4", is applied to two different scripts, the files to filter are computed twice, which is very inefficient. Better create a filter stored on disk beforehand (by using *filter.py*) and specify the "file-filter" when filtering data.
- 
- 
+
+
 ## Setup
 Module **setup_tools.sh** is used to install the required tools which can be used for the JSC checks.
 
@@ -47,3 +47,168 @@ Make sure you use the right Python-Version (Python 3.7). E.g., running subschema
 
 ### MacOS
 Some modules can be executed with multiple processes, so some computations can be done in parallel. Due to the security features of MacOS for multithreading/multiprocessing, some scripts might crash by runtime. Export or start the script with the following variable: `OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES`.
+
+# Study
+
+Here are the commands and used data presented to reproduce the results of our study.
+
+## Preparation
+
+### Schemastore
+
+1. Check out the SchemaStore from GitHub (https://github.com/SchemaStore/schemastore)
+   `git clone https://github.com/SchemaStore/schemastore`
+2. Revert the repository to the commit used for our study: 
+   `git checkout c48c727`
+3. Clone each commit made to the repository in a separate directory:
+   `python git_history_cloner.py -g <path-to-cloned-schemastore-repository> -od <some-output-directory>`
+   This command may take a while and needs about 24GB of disk space.
+
+These steps are mandatory and have to be done on your machine. For automatic preparation, the script *preparation.sh* can be used. The steps to generate further data are optional. The precomputed data in the *data* directory can be used. For the following instructions, the name of the precomputed data is given first and the steps to create this data are stated afterwards.
+
+### Base data
+
+*data/data-06-19-2020.pick*
+
+Get all changed files out of the history. This is the data which is used for further analysis:
+
+`python git_file_changes.py -c <commit-directory> -o <output-file>`
+
+### Filter
+
+- *data/filter_draft4.pick* - only valid Draft4 documents
+- *data/filter_draft4_no-jsonref.pick* - a subset where all references are non-recursive, document-internal or URLs, and can be resolved (referred to as *RF* in figure 4 of the study)
+- *data/filter_draft4_no-not.pick* - without *not* keyword (referred to as *NF* in figure 4 of the study)
+- *data/filter_draft4_no-jsonref_no-not.pick* - the combination of *RF* and *NF*  (referred to as *RF+NF* in figure 4 of the study)
+
+Create the filter out of the data based on specific conditions (only valid Draft4 documents, no *not* keyword, only valid *$ref*)
+
+`python filter.py -f data/data-06-19-2020.pick -c <commit-directory> -p src/schemas/json/ -o <output-name> -filter-on-the-fly <filter-condition>`
+
+See the help text of *filter.py* (`python filter.py --help`) for the available filter conditions.
+
+## Study data
+
+The filter *filter_draft4.pick* is applied to **every** script to get only the documents valid to Draft4. Details are described in section *3.2 Analysis Process* of the paper. 
+
+The data is available in the *output* directory. In the beginning of each file is the command given to produce this data.
+
+### General numbers
+
+- *output/general_numbers.txt*
+
+`python git_file_changes_output.py -f data/data-06-19-2020.pick -c <commit-directory> -p src/schemas/json/ -filter-file filter_draft4.pick`
+
+View the overall numbers of different documents, historic versions, ...
+
+#### Filtered data based on keyword
+
+- *output/filter_keyword.txt*
+
+` python draft4_new_keywords_finder.py -f data/data-06-19-2020.pick -p src/schemas/json/ -c <commit-directory>`
+
+The exakt number of files filtered based on introduced keywords after Draft4 (mentioned in section *3.2* of the paper).
+
+### Number of valid/invalid schemas
+
+- *data/schema_drafts.pick*
+
+ `python schema_drafts.py -c <commit-directory> -p src/schemas/json/ -f data/data-06-19-2020.pick -o schema_drafts.pick`
+
+- *output/schema_drafts.txt*
+
+`python schema_drafts_output_statistics.py -f data/schema_drafts.pick -c <commit-directory> -filter-file data/filter_draft4.pick`
+
+Statistics about the distribution of the different schema drafts of the SchemaStore documents, how many schemas contain an invalid reference, ...
+
+`python schema_drafts_plot.py -f data/schema_drafts.pick -c <commit-directory>`
+
+Statistics about the different error cases (Recursion Error, Reference Error, ...).
+
+### 4.1 RQ1: What is the real-world applicability of JSC-tools?
+
+- *data/subschemas_self_python-jsonsubschema.pick* - data from Tool A
+- *data/subschemas_self_npm-is-json-schema-subset.pick* - data from Tool B
+
+Data generation: ` python subschemas.py -f data/data-06-19-2020.pick -c <commit-directory> -p src/schemas/json/ -o <output-file> -si <tool-to-check-containment> -self`
+
+The flag `-self` is important to check each schema against itself. Otherwise successive schemas will be compared.
+
+- *data/rq1_applicability.txt*
+
+`python subschemas_output_common_symbols.py -f data/subschemas_self_python-jsonsubschema.pick -f2 data/subschemas_self_npm-is-json-schema-subset.pick -c <commit-directory> -filter-file data/filter_draft4.pick`
+
+The data for table 1a.
+
+### 4.2 RQ2: Which language features are difficult to handle?
+
+The data generated in *4.1 RQ1* is used.
+
+#### Figure 3 - Top 3 Errors
+
+- *output/rq2_top3-failures_tool-A.txt*
+- *output/rq2_top3-failures_tool-B.txt*
+
+Tool A: `python subschemas_plot_exception_types.py -f data/subschemas_self_python-jsonsubschema.pick -c <commit-directory> -filter-file data/filter_draft4.pick`
+
+Tool B: `python subschemas_plot_exception_types.py -f data/subschemas_self_npm-is-json-schema-subset.pick -c <commit-directory> -filter-file data/filter_draft4.pick`
+
+#### Figure 4 - problematic operators
+
+- *data/subschemas_python-jsonsubschema.pick* - data from Tool A
+- *data/subschemas_npm-is-json-schema-subset.pick* - data from Tool B
+
+Data should be generated as in RQ1, but just *without* the `-self` flag.
+
+- Tool A:
+  - *output/rq2_problematic-operator_EC_tool-A.txt*
+  - *output/rq2_problematic-operator_NF_tool-A.txt*
+  - *output/rq2_problematic-operator_RF_tool-A.txt*
+  - *output/rq2_problematic-operator_RF+NF_tool-A.txt*
+- Tool B:
+  - *output/rq2_problematic-operator_EC_tool-B.txt*
+  - *output/rq2_problematic-operator_NF_tool-B.txt*
+  - *output/rq2_problematic-operator_RF_tool-B.txt*
+  - *output/rq2_problematic-operator_RF+NF_tool-B.txt*
+
+
+
+Filter-Name-Mapping:
+
+- **EC** = *data/filter_draft4.pick*
+- **NF** = *data/filter_draft4_no-not.pick*
+- **RF** = *data/filter_draft4_no-jsonref.pick*
+- **RF+NF** = *data/filter_draft4_no-jsonref_no-not.pick*
+
+Apply *each* filter to the following command to get the result of figure 4.
+
+##### Tool A:
+
+`python subschemas_plot_symbols_bar.py -f data/subschemas_python-jsonsubschema.pick -c <commit-directory> -filter-file <filter>`
+
+##### Tool B:
+
+`python subschemas_plot_symbols_bar.py -f data/subschemas_npm-is-json-schema-subset.pick -c <commit-directory> -filter-file <filter>`
+
+### 4.3 RQ3: What is the degree of consensus among JSC-tools?
+
+The data generated in *4.2 RA2 - Figure 4* is used.
+
+- *output/rq3_consensus.txt*
+
+`python subschemas_output_common_symbols.py -f data/subschemas_python-jsonsubschema.pick -f2 data/subschemas_npm-is-json-schema-subset.pick -c <commit-directory> -filter-file data/filter_draft4.pick`
+
+The data for table 1b.
+
+### Section 5 - Discussion of Results and Research Opportunities - Categorization
+
+- *output/categorization_NF.txt*
+- *output/categorization_RF.txt*
+- *output/categorization_RF+NF.txt*
+
+As `<filter>`, use the RF, NF or RF+NF filter (as described in *4.2 RA2 - Figure 4*)
+
+` python filter_output_categories.py -f <filter> -c <commit-directory>`
+
+The statistics about the categorisation of the filtered data.
+

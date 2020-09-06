@@ -1,0 +1,22 @@
+python subschemas_plot_exception_types.py -f data/subschemas_self_python-jsonsubschema.pick -c schemastore_history/commits -filter-file data/filter_draft4.pick
+
+                                      Exception_Type  Counts  Percentage
+0                           <class 'AttributeError'>     381   58.887172
+1                           <class 'RecursionError'>     119   18.392581
+2        <class 'jsonschema.exceptions.SchemaError'>      68   10.510046
+3                     <class 'jsonref.JsonRefError'>      41    6.336940
+4                                <class 'Exception'>      27    4.173107
+5                               <class 'SystemExit'>       6    0.927357
+6                                 <class 're.error'>       4    0.618238
+7  <class 'jsonsubschema.exceptions.UnexpectedCan...       1    0.154560
+                                      Exception_Type  Counts  Percentage
+0                           <class 'AttributeError'>     381        58.9
+1                           <class 'RecursionError'>     119        18.4
+2        <class 'jsonschema.exceptions.SchemaError'>      68        10.5
+3                     <class 'jsonref.JsonRefError'>      41         6.3
+4                                <class 'Exception'>      27         4.2
+5                               <class 'SystemExit'>       6         0.9
+6                                 <class 're.error'>       4         0.6
+7  <class 'jsonsubschema.exceptions.UnexpectedCan...       1         0.2
+Total pairs: 1028
+Total errors: 647

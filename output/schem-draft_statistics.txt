@@ -1,0 +1,142 @@
+python schema_drafts_output_statistics.py -f data/schema_drafts.pick -c schemastore_history/commits -filter-file data/filter_draft4.pick
+
+Valid/Invalid schemas in different steps:
+Total Files: 1028
+NORMAL: 1028
+NORMAL: 0 Fails
+NORMAL_REFS: 890
+NORMAL_REFS: 138 Fails
+##################################################
+Valid schemas by drafts:
+NORMAL: 1028 (Total)
+NORMAL - Draft3: 665
+	http://json-schema.org/draft-04/schema#: 563
+	http://json-schema.org/draft-07/schema#: 47
+	http://json-schema.org/draft-04/schema: 37
+	http://json-schema.org/draft-06/schema#: 4
+	http://json-schema.org/draft-07/schema: 7
+	https://json-schema.org/draft-07/schema: 4
+	None: 3
+NORMAL - Draft4: 1028
+	http://json-schema.org/draft-04/schema#: 812
+	http://json-schema.org/schema#: 11
+	http://json-schema.org/draft-07/schema#: 96
+	http://json-schema.org/draft-04/schema: 57
+	http://json-schema.org/draft-06/schema#: 17
+	None: 7
+	http://json-schema.org/draft-07/schema: 12
+	https://json-schema.org/draft-07/schema: 4
+	http://json-schema.org/schema: 12
+NORMAL - Draft6: 1028
+	http://json-schema.org/draft-04/schema#: 812
+	http://json-schema.org/schema#: 11
+	http://json-schema.org/draft-07/schema#: 96
+	http://json-schema.org/draft-04/schema: 57
+	http://json-schema.org/draft-06/schema#: 17
+	None: 7
+	http://json-schema.org/draft-07/schema: 12
+	https://json-schema.org/draft-07/schema: 4
+	http://json-schema.org/schema: 12
+NORMAL - Draft7: 1028
+	http://json-schema.org/draft-04/schema#: 812
+	http://json-schema.org/schema#: 11
+	http://json-schema.org/draft-07/schema#: 96
+	http://json-schema.org/draft-04/schema: 57
+	http://json-schema.org/draft-06/schema#: 17
+	None: 7
+	http://json-schema.org/draft-07/schema: 12
+	https://json-schema.org/draft-07/schema: 4
+	http://json-schema.org/schema: 12
+NORMAL_REFS: 890 (Total)
+NORMAL_REFS - Draft3: 588
+	http://json-schema.org/draft-04/schema#: 519
+	http://json-schema.org/draft-07/schema#: 30
+	http://json-schema.org/draft-04/schema: 25
+	http://json-schema.org/draft-07/schema: 5
+	https://json-schema.org/draft-07/schema: 4
+	http://json-schema.org/draft-06/schema#: 2
+	None: 3
+NORMAL_REFS - Draft4: 845
+	http://json-schema.org/draft-04/schema#: 654
+	http://json-schema.org/draft-07/schema#: 90
+	http://json-schema.org/draft-04/schema: 56
+	None: 7
+	http://json-schema.org/draft-06/schema#: 10
+	http://json-schema.org/draft-07/schema: 12
+	https://json-schema.org/draft-07/schema: 4
+	http://json-schema.org/schema: 12
+NORMAL_REFS - Draft6: 845
+	http://json-schema.org/draft-04/schema#: 654
+	http://json-schema.org/draft-07/schema#: 90
+	http://json-schema.org/draft-04/schema: 56
+	None: 7
+	http://json-schema.org/draft-06/schema#: 10
+	http://json-schema.org/draft-07/schema: 12
+	https://json-schema.org/draft-07/schema: 4
+	http://json-schema.org/schema: 12
+NORMAL_REFS - Draft7: 845
+	http://json-schema.org/draft-04/schema#: 654
+	http://json-schema.org/draft-07/schema#: 90
+	http://json-schema.org/draft-04/schema: 56
+	None: 7
+	http://json-schema.org/draft-06/schema#: 10
+	http://json-schema.org/draft-07/schema: 12
+	https://json-schema.org/draft-07/schema: 4
+	http://json-schema.org/schema: 12
+##################################################
+Invalid schemas by drafts:
+NORMAL_REFS: 890 (Total)
+NORMAL_REFS - Draft4: 183
+	http://json-schema.org/draft-04/schema#: 158
+	http://json-schema.org/schema#: 11
+	http://json-schema.org/draft-06/schema#: 7
+	http://json-schema.org/draft-07/schema#: 6
+	http://json-schema.org/draft-04/schema: 1
+NORMAL_REFS - Draft6: 183
+	http://json-schema.org/draft-04/schema#: 158
+	http://json-schema.org/schema#: 11
+	http://json-schema.org/draft-06/schema#: 7
+	http://json-schema.org/draft-07/schema#: 6
+	http://json-schema.org/draft-04/schema: 1
+NORMAL_REFS - Draft7: 183
+	http://json-schema.org/draft-04/schema#: 158
+	http://json-schema.org/schema#: 11
+	http://json-schema.org/draft-06/schema#: 7
+	http://json-schema.org/draft-07/schema#: 6
+	http://json-schema.org/draft-04/schema: 1
+NORMAL_REFS - Draft3: 440
+	http://json-schema.org/draft-04/schema#: 293
+	http://json-schema.org/schema#: 11
+	http://json-schema.org/draft-07/schema#: 66
+	http://json-schema.org/draft-04/schema: 32
+	http://json-schema.org/draft-06/schema#: 15
+	None: 4
+	http://json-schema.org/schema: 12
+	http://json-schema.org/draft-07/schema: 7
+NORMAL: 1028 (Total)
+NORMAL - Draft3: 363
+	http://json-schema.org/draft-04/schema#: 249
+	http://json-schema.org/schema#: 11
+	http://json-schema.org/draft-07/schema#: 49
+	http://json-schema.org/draft-06/schema#: 13
+	http://json-schema.org/draft-04/schema: 20
+	None: 4
+	http://json-schema.org/schema: 12
+	http://json-schema.org/draft-07/schema: 5
+##################################################
+Schemas valid/invalid to all drafts:
+['Draft4', 'Draft6', 'Draft7']
+NORMAL valid: 1028 | invalid: 0
+NORMAL REFS valid: 845 | invalid: 183
+##################################################
+Specified Schema Tags (Total files: 1028):
+http://json-schema.org/draft-04/schema#: 812
+http://json-schema.org/schema#: 11
+http://json-schema.org/draft-07/schema#: 96
+http://json-schema.org/draft-04/schema: 57
+http://json-schema.org/draft-06/schema#: 17
+None: 7
+http://json-schema.org/draft-07/schema: 12
+https://json-schema.org/draft-07/schema: 4
+http://json-schema.org/schema: 12
+Total: 1028

@@ -1,0 +1,15 @@
+python subschemas_plot_symbols_bar.py -f data/subschemas_python-jsonsubschema.pick -c schemastore_history/commits -filter-file data/filter_draft4_no-jsonref.pick
+
+          Symbol  Counts  Percentage  Percentage Base 796
+0         Fail ⟂     385   59.049080            48.366834
+1        Equal ≡      83   12.730061            10.427136
+2  Superschema ⊃      62    9.509202             7.788945
+3    Subschema ⊂      62    9.509202             7.788945
+4      Nothing ∥      60    9.202454             7.537688
+          Symbol  Counts  Percentage  Percentage Base 796
+0         Fail ⟂     385        59.0                 48.4
+1        Equal ≡      83        12.7                 10.4
+2  Superschema ⊃      62         9.5                  7.8
+3    Subschema ⊂      62         9.5                  7.8
+4      Nothing ∥      60         9.2                  7.5
+Total Counts: 652
