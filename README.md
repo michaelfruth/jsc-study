@@ -66,7 +66,7 @@ Here are the commands and used data presented to reproduce the results of our st
 
 These steps are mandatory and have to be done on your machine. For automatic preparation, the script *preparation.sh* can be used. The steps to generate further data are optional. The precomputed data in the *data* directory can be used. For the following instructions, the name of the precomputed data is given first and the steps to create this data are stated afterwards.
 
-We use the environment variable `$COMMIT_DIR` to specify the directory containing all commits. In our case, the variable has the value `schemastore_history/commits` (e.g. `EXPORT COMMIT_DIR=schemastore_history/commits`).
+For the commands below, ee use the environment variable `$COMMIT_DIR` to specify the directory containing all commits. In our case, the variable has the value `schemastore_history/commits` (e.g. `export COMMIT_DIR=schemastore_history/commits`).
 
 ### Base data
 
@@ -88,6 +88,28 @@ Create the filter out of the data based on specific conditions (only valid Draft
 `python filter.py -f data/data-06-19-2020.pick -c $COMMIT_DIR -p src/schemas/json/ -o <output-name> -filter-on-the-fly <filter-condition>`
 
 See the help text of *filter.py* (`python filter.py --help`) for the available filter conditions.
+
+## Docker
+For reproducibility, a Docker container can be created in which all commands below can be executed.
+
+```
+# 1. Build docker container
+docker build -t jsc-study .
+
+# 2. Run a container
+docker run -it -d --name jsc-study jsc-study 
+
+# 3. Access container
+docker exec -it jsc-study /bin/bash
+
+# 4. Activate pipenv shell
+pipenv shell
+
+# 5. Prepare all data (this step only has to be done once)
+./preparation.sh
+
+# 6. Now, the commands below can be executed within the container.
+```
 
 ## Study data
 
