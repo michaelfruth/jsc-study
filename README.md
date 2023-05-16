@@ -66,13 +66,15 @@ Here are the commands and used data presented to reproduce the results of our st
 
 These steps are mandatory and have to be done on your machine. For automatic preparation, the script *preparation.sh* can be used. The steps to generate further data are optional. The precomputed data in the *data* directory can be used. For the following instructions, the name of the precomputed data is given first and the steps to create this data are stated afterwards.
 
+We use the environment variable `$COMMIT_DIR` to specify the directory containing all commits. In our case, the variable has the value `schemastore_history/commits` (e.g. `EXPORT COMMIT_DIR=schemastore_history/commits`).
+
 ### Base data
 
 *data/data-06-19-2020.pick*
 
 Get all changed files out of the history. This is the data which is used for further analysis:
 
-`python git_file_changes.py -c <commit-directory> -o <output-file>`
+`python git_file_changes.py -c $COMMIT_DIR -o <output-file>`
 
 ### Filter
 
@@ -83,7 +85,7 @@ Get all changed files out of the history. This is the data which is used for fur
 
 Create the filter out of the data based on specific conditions (only valid Draft4 documents, no *not* keyword, only valid *$ref*)
 
-`python filter.py -f data/data-06-19-2020.pick -c <commit-directory> -p src/schemas/json/ -o <output-name> -filter-on-the-fly <filter-condition>`
+`python filter.py -f data/data-06-19-2020.pick -c $COMMIT_DIR -p src/schemas/json/ -o <output-name> -filter-on-the-fly <filter-condition>`
 
 See the help text of *filter.py* (`python filter.py --help`) for the available filter conditions.
 
@@ -97,7 +99,7 @@ The data is available in the *output* directory. In the beginning of each file i
 
 - *output/general_numbers.txt*
 
-`python git_file_changes_output.py -f data/data-06-19-2020.pick -c <commit-directory> -p src/schemas/json/ -filter-file filter_draft4.pick`
+`python git_file_changes_output.py -f data/data-06-19-2020.pick -c $COMMIT_DIR -p src/schemas/json/ -filter-file data/filter_draft4.pick`
 
 View the overall numbers of different documents, historic versions, ...
 
@@ -105,7 +107,7 @@ View the overall numbers of different documents, historic versions, ...
 
 - *output/filter_keyword.txt*
 
-` python draft4_new_keywords_finder.py -f data/data-06-19-2020.pick -p src/schemas/json/ -c <commit-directory>`
+` python draft4_new_keywords_finder.py -f data/data-06-19-2020.pick -p src/schemas/json/ -c $COMMIT_DIR`
 
 The exakt number of files filtered based on introduced keywords after Draft4 (mentioned in section *3.2* of the paper).
 
@@ -113,15 +115,15 @@ The exakt number of files filtered based on introduced keywords after Draft4 (me
 
 - *data/schema_drafts.pick*
 
- `python schema_drafts.py -c <commit-directory> -p src/schemas/json/ -f data/data-06-19-2020.pick -o schema_drafts.pick`
+ `python schema_drafts.py -c $COMMIT_DIR -p src/schemas/json/ -f data/data-06-19-2020.pick -o schema_drafts.pick`
 
 - *output/schema_drafts.txt*
 
-`python schema_drafts_output_statistics.py -f data/schema_drafts.pick -c <commit-directory> -filter-file data/filter_draft4.pick`
+`python schema_drafts_output_statistics.py -f data/schema_drafts.pick -c $COMMIT_DIR -filter-file data/filter_draft4.pick`
 
 Statistics about the distribution of the different schema drafts of the SchemaStore documents, how many schemas contain an invalid reference, ...
 
-`python schema_drafts_plot.py -f data/schema_drafts.pick -c <commit-directory>`
+`python schema_drafts_plot.py -f data/schema_drafts.pick -c $COMMIT_DIR`
 
 Statistics about the different error cases (Recursion Error, Reference Error, ...).
 
@@ -130,13 +132,13 @@ Statistics about the different error cases (Recursion Error, Reference Error, ..
 - *data/subschemas_self_python-jsonsubschema.pick* - data from Tool A
 - *data/subschemas_self_npm-is-json-schema-subset.pick* - data from Tool B
 
-Data generation: ` python subschemas.py -f data/data-06-19-2020.pick -c <commit-directory> -p src/schemas/json/ -o <output-file> -si <tool-to-check-containment> -self`
+Data generation: ` python subschemas.py -f data/data-06-19-2020.pick -c $COMMIT_DIR -p src/schemas/json/ -o <output-file> -si <tool-to-check-containment> -self`
 
 The flag `-self` is important to check each schema against itself. Otherwise successive schemas will be compared.
 
 - *data/rq1_applicability.txt*
 
-`python subschemas_output_common_symbols.py -f data/subschemas_self_python-jsonsubschema.pick -f2 data/subschemas_self_npm-is-json-schema-subset.pick -c <commit-directory> -filter-file data/filter_draft4.pick`
+`python subschemas_output_common_symbols.py -f data/subschemas_self_python-jsonsubschema.pick -f2 data/subschemas_self_npm-is-json-schema-subset.pick -c $COMMIT_DIR -filter-file data/filter_draft4.pick`
 
 The data for table 1a.
 
@@ -149,9 +151,9 @@ The data generated in *4.1 RQ1* is used.
 - *output/rq2_top3-failures_tool-A.txt*
 - *output/rq2_top3-failures_tool-B.txt*
 
-Tool A: `python subschemas_plot_exception_types.py -f data/subschemas_self_python-jsonsubschema.pick -c <commit-directory> -filter-file data/filter_draft4.pick`
+Tool A: `python subschemas_plot_exception_types.py -f data/subschemas_self_python-jsonsubschema.pick -c $COMMIT_DIR -filter-file data/filter_draft4.pick`
 
-Tool B: `python subschemas_plot_exception_types.py -f data/subschemas_self_npm-is-json-schema-subset.pick -c <commit-directory> -filter-file data/filter_draft4.pick`
+Tool B: `python subschemas_plot_exception_types.py -f data/subschemas_self_npm-is-json-schema-subset.pick -c $COMMIT_DIR -filter-file data/filter_draft4.pick`
 
 #### Figure 4 - problematic operators
 
@@ -184,11 +186,11 @@ Apply *each* filter to the following command to get the result of figure 4.
 
 ##### Tool A:
 
-`python subschemas_plot_symbols_bar.py -f data/subschemas_python-jsonsubschema.pick -c <commit-directory> -filter-file <filter>`
+`python subschemas_plot_symbols_bar.py -f data/subschemas_python-jsonsubschema.pick -c $COMMIT_DIR -filter-file <filter>`
 
 ##### Tool B:
 
-`python subschemas_plot_symbols_bar.py -f data/subschemas_npm-is-json-schema-subset.pick -c <commit-directory> -filter-file <filter>`
+`python subschemas_plot_symbols_bar.py -f data/subschemas_npm-is-json-schema-subset.pick -c $COMMIT_DIR -filter-file <filter>`
 
 ### 4.3 RQ3: What is the degree of consensus among JSC-tools?
 
@@ -196,7 +198,7 @@ The data generated in *4.2 RA2 - Figure 4* is used.
 
 - *output/rq3_consensus.txt*
 
-`python subschemas_output_common_symbols.py -f data/subschemas_python-jsonsubschema.pick -f2 data/subschemas_npm-is-json-schema-subset.pick -c <commit-directory> -filter-file data/filter_draft4.pick`
+`python subschemas_output_common_symbols.py -f data/subschemas_python-jsonsubschema.pick -f2 data/subschemas_npm-is-json-schema-subset.pick -c $COMMIT_DIR -filter-file data/filter_draft4.pick`
 
 The data for table 1b.
 
@@ -208,7 +210,7 @@ The data for table 1b.
 
 As `<filter>`, use the RF, NF or RF+NF filter (as described in *4.2 RA2 - Figure 4*)
 
-` python filter_output_categories.py -f <filter> -c <commit-directory>`
+` python filter_output_categories.py -f <filter> -c $COMMIT_DIR`
 
 The statistics about the categorisation of the filtered data.
 
